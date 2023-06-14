@@ -1,15 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { LocationComponent } from './components/Location';
+import { CameraComponent } from './components/Camara';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>DEVICES FEATURES</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <LocationComponent />
+      <CameraComponent />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
