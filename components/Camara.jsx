@@ -9,7 +9,7 @@ export const CameraComponent = () => {
   const handleImagePicker = async () => {
     const { status } = await ImagePicker.requestCameraPermissionsAsync();
     if (status !== 'granted') {
-      Alert.alert('Permiso denegado', 'No se puede acceder a la galería de imágenes.');
+      Alert.alert('Permiso denegado', 'No se puede acceder a la cámara');
       return;
     }
 
